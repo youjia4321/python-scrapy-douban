@@ -1,0 +1,2 @@
+# python_scrapy_douban
+实现scrapy框架模拟登录豆瓣并且登录后修改个人资料

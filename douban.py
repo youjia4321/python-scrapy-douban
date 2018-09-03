@@ -8,8 +8,8 @@ class DoubanSpider(scrapy.Spider):
     allowed_domains = ['douban.com']
     start_urls = ['https://accounts.douban.com/login']
     login_url = 'https://accounts.douban.com/login'
-    profile_url = 'https://www.douban.com/people/161614413/'
-    edit_url = 'https://www.douban.com/j/people/161614413/edit_signature'
+    profile_url = 'https://www.douban.com/people/161614413/' # 这里是个人主页的url ，写你登录账户的url地址（需要修改）
+    edit_url = 'https://www.douban.com/j/people/161614413/edit_signature' # 同上
     def parse(self, response):
         formdata = {
             'source': 'index_nav',
